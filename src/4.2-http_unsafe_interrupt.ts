@@ -1,12 +1,10 @@
 import * as T from "@matechs/core/Effect";
 import * as Ex from "@matechs/core/Exit";
-import { getTodo, showTodo, TodoDeserializationError } from "./4-run";
 import { constVoid } from "@matechs/core/Function";
 import { pipe } from "@matechs/core/Pipe";
-import { log, liveConsole } from "./1-environment";
+import { liveConsole, log } from "./1-environment";
 import { HttpError, JsonError, liveHttpClient } from "./3-async";
-
-// get a single todo
+import { getTodo, showTodo, TodoDeserializationError } from "./4-http";
 
 const main = pipe(
   getTodo(1),
@@ -19,4 +17,8 @@ const liveMain: T.AsyncE<HttpError | JsonError | TodoDeserializationError, void>
   liveHttpClient
 );
 
-T.run(liveMain, Ex.foldExit(console.error, constVoid));
+const cancel = T.run(liveMain, Ex.foldExit(console.error, constVoid));
+
+// interrupt the running http request
+
+cancel();

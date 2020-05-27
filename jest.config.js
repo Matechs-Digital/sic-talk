@@ -9,5 +9,8 @@ module.exports = {
     collectCoverageFrom: [
         "src/**/(1|2)*.ts"
     ],
+    testPathIgnorePatterns: [
+        ".*unsafe.*"
+    ],
     testRegex: 'test'
 };

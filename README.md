@@ -20,11 +20,14 @@ yarn build
 
 # Run
 ```bash
-node lib/4.1-run_unsafe.js
-node lib/4.2-run_unsafe_interrupt.js
-node lib/4.3-run_unsafe_parallel.js
-node lib/4.4-run_unsafe_parallel_fast_interrupt.js
-node lib/4.5-run_unsafe_par_fast_traverse.js
-node lib/5-managed.js
-node lib/6-stream.js
+node lib/0.1-intro_unsafe.js
+node lib/1.1-environment_unsafe.js
+node lib/2.1-multienv_unsafe.js
+node lib/4.1-http_unsafe.js
+node lib/4.2-http_unsafe_interrupt.js
+node lib/4.3-http_unsafe_parallel.js
+node lib/4.4-http_unsafe_parallel_fast_interrupt.js
+node lib/4.5-http_unsafe_par_fast_traverse.js
+node lib/5-managed_unsafe.js
+node lib/6-stream_unsafe.js
 ```

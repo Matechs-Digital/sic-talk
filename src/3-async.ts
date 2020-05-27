@@ -10,7 +10,8 @@ import { pipe } from "@matechs/core/Pipe";
 //
 
 export class HttpError extends Error {
-  _tag = "HttpError" as const;
+  readonly _tag = "HttpError";
+
   constructor(inner: Error) {
     super(inner.message);
     this.stack = inner.stack;
@@ -19,7 +20,7 @@ export class HttpError extends Error {
 }
 
 export class JsonError extends Error {
-  _tag = "JsonError" as const;
+  readonly _tag = "JsonError";
 
   constructor(readonly inner: unknown) {
     super("json decoding failed");

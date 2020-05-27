@@ -47,7 +47,7 @@ export const add5andMul10M_ = (x: number): T.Sync<number> =>
 // division
 
 export class DivByZero extends Error {
-  _tag = "DivByZero" as const;
+  readonly _tag = "DivByZero";
 
   constructor() {
     super("Division by Zero");
@@ -64,7 +64,7 @@ export const div = (y: number) => (x: number) =>
 // add % between 0-100
 
 export class OutOfBound extends Error {
-  _tag = "OutOfBound" as const;
+  readonly _tag = "OutOfBound";
 
   constructor(n: number) {
     super(`${n} has to be between 0 and 100`);

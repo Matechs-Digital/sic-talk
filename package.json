@@ -1,0 +1,25 @@
+{
+  "name": "sic-talk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Matechs-Garage/sic-talk.git",
+  "author": "Michael Arnaldi <arnaldimichael@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf lib && tsc -p tsconfig.build.json",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@matechs/test-jest": "^3.2.0",
+    "@types/jest": "^25.2.3",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.0.0",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "@matechs/core": "^1.2.0"
+  }
+}

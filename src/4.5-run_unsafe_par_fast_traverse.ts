@@ -5,14 +5,14 @@ import { constVoid } from "@matechs/core/Function";
 import { pipe } from "@matechs/core/Pipe";
 import { liveConsole, log } from "./1-environment";
 import { HttpError, JsonError, liveHttpClient } from "./3-async";
-import { getTodo, TodoDeserializationError } from "./4-run";
+import { getTodo, TodoDeserializationError, showTodos } from "./4-run";
 
 // traverse an array of ids, in parallel, interrupting all at first error
 
 const main = pipe(
   A.range(1, 4),
   T.parFastTraverseArray(getTodo),
-  T.chain((todos) => log(JSON.stringify(todos, null, 2)))
+  T.chain((todos) => log(showTodos.show(todos)))
 );
 
 const liveMain: T.AsyncE<

@@ -9,21 +9,21 @@ import { pipe } from "@matechs/core/Pipe";
 // Error Definition
 //
 
-export class HttpError extends Error {
+export class HttpError {
   readonly _tag = "HttpError";
+  readonly message: string;
 
   constructor(inner: Error) {
-    super(inner.message);
-    this.stack = inner.stack;
-    this.name = inner.name;
+    this.message = inner.message;
   }
 }
 
-export class JsonError extends Error {
+export class JsonError {
   readonly _tag = "JsonError";
+  readonly message: string;
 
   constructor(readonly inner: unknown) {
-    super("json decoding failed");
+    this.message = "json decoding failed";
   }
 }
 

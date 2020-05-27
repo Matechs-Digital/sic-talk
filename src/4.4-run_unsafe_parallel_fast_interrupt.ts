@@ -4,7 +4,7 @@ import { constVoid } from "@matechs/core/Function";
 import { pipe } from "@matechs/core/Pipe";
 import { liveConsole, log } from "./1-environment";
 import { HttpError, JsonError, liveHttpClient } from "./3-async";
-import { getTodo, TodoDeserializationError } from "./4-run";
+import { getTodo, TodoDeserializationError, showTodos } from "./4-run";
 
 // demonstrate interruption of all at first error
 
@@ -15,7 +15,7 @@ const main = pipe(
     getTodo(3),
     T.raiseError("trigger")
   ),
-  T.chain((todos) => log(JSON.stringify(todos, null, 2)))
+  T.chain((todos) => log(showTodos.show(todos)))
 );
 
 const liveMain: T.AsyncE<

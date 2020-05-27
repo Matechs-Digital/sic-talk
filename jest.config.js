@@ -7,10 +7,8 @@ module.exports = {
     collectCoverage: false,
     coverageDirectory: "coverage",
     collectCoverageFrom: [
-        "src/**/(1|2)*.ts"
-    ],
-    testPathIgnorePatterns: [
-        ".*unsafe.*"
+        "src/**/(1|2)*.ts",
+        "!src/**/*_unsafe*.ts",
     ],
     testRegex: 'test'
 };

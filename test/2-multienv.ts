@@ -1,10 +1,10 @@
-import { suite, testM, expect, run, mockedTestM, spyOn } from "@matechs/test-jest";
-import { program, liveCalculator, Calculator, CalculatorURI } from "../src/2-multienv";
-import * as T from "@matechs/core/Effect";
 import * as A from "@matechs/core/Array";
-import * as R from "@matechs/core/Ref";
+import * as T from "@matechs/core/Effect";
 import { pipe } from "@matechs/core/Pipe";
-import { TestMessage, testConsole, testMessage } from "../src/1-environment";
+import * as R from "@matechs/core/Ref";
+import { expect, run, suite, testM } from "@matechs/test-jest";
+import { testConsole, TestMessage, testMessage } from "../src/1-environment";
+import { Calculator, CalculatorURI, liveCalculator, program } from "../src/2-multienv";
 
 const logResult = testM(
   "Should log result",

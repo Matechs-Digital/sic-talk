@@ -19,4 +19,6 @@ const liveMain: T.AsyncE<HttpError | JsonError | TodoDeserializationError, void>
 
 const cancel = T.run(liveMain, Ex.foldExit(console.error, constVoid));
 
+// interrupt the running http request
+
 cancel();

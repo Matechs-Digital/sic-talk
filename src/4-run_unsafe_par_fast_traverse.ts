@@ -7,6 +7,8 @@ import { liveConsole, log } from "./1-environment";
 import { HttpError, JsonError, liveHttpClient } from "./3-async";
 import { getTodo, TodoDeserializationError } from "./4-run";
 
+// traverse an array of ids, in parallel, interrupting all at first error
+
 const main = pipe(
   A.range(1, 4),
   T.parFastTraverseArray(getTodo),

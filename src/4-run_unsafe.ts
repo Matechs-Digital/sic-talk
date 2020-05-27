@@ -6,6 +6,8 @@ import { pipe } from "@matechs/core/Pipe";
 import { log, liveConsole } from "./1-environment";
 import { HttpError, JsonError, liveHttpClient } from "./3-async";
 
+// get a single todo
+
 const main = pipe(
   getTodo(1),
   T.chain((todo) => log(showTodo.show(todo)))

@@ -6,6 +6,8 @@ import { liveConsole, log } from "./1-environment";
 import { HttpError, JsonError, liveHttpClient } from "./3-async";
 import { getTodo, TodoDeserializationError } from "./4-run";
 
+// demonstrate interruption of all at first error
+
 const main = pipe(
   T.parFastSequenceT(
     pipe(getTodo(1), T.onInterrupted(T.sync(() => console.log("interrupted")))),

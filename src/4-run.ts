@@ -1,9 +1,8 @@
-import * as T from "@matechs/core/Effect";
 import * as A from "@matechs/core/Array";
-import { liveHttpClient, getJson, HttpError, JsonError } from "./3-async";
-import { log, liveConsole } from "./1-environment";
+import * as T from "@matechs/core/Effect";
 import { pipe } from "@matechs/core/Pipe";
 import { Show, showString } from "@matechs/core/Show";
+import { getJson } from "./3-async";
 
 export interface Todo {
   userId: number;

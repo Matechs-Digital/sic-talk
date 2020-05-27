@@ -1,5 +1,5 @@
 import * as T from "@matechs/core/Effect";
-import { program, handled, handledAll } from "./0-intro";
+import { handled, handledAll, program } from "./0-intro";
 
 const result1 = T.runSync(program(0, 1)(5));
 

@@ -1,9 +1,9 @@
-import * as S from "@matechs/core/Stream";
-import * as T from "@matechs/core/Effect";
 import * as A from "@matechs/core/Array";
-import { pipe } from "@matechs/core/Pipe";
-import { add, liveCalculator } from "./2-multienv";
+import * as T from "@matechs/core/Effect";
 import { foldExit } from "@matechs/core/Exit";
+import { pipe } from "@matechs/core/Pipe";
+import * as S from "@matechs/core/Stream";
+import { add, liveCalculator } from "./2-multienv";
 
 const program = pipe(
   S.fromArray(A.range(0, 100)),

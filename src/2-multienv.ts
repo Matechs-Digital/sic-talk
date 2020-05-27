@@ -1,6 +1,6 @@
 import * as T from "@matechs/core/Effect";
-import * as C from "./1-environment";
 import { pipe } from "@matechs/core/Pipe";
+import * as C from "./1-environment";
 
 //
 // Service Definition

@@ -1,9 +1,8 @@
 import * as T from "@matechs/core/Effect";
 import * as E from "@matechs/core/Either";
 import * as M from "@matechs/core/Monoid";
-
-import * as https from "https";
 import { pipe } from "@matechs/core/Pipe";
+import * as https from "https";
 
 //
 // Error Definition

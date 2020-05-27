@@ -1,10 +1,10 @@
 import * as T from "@matechs/core/Effect";
 import * as Ex from "@matechs/core/Exit";
-import { getTodo, showTodo, TodoDeserializationError } from "./4-http";
 import { constVoid } from "@matechs/core/Function";
 import { pipe } from "@matechs/core/Pipe";
-import { log, liveConsole } from "./1-environment";
+import { liveConsole, log } from "./1-environment";
 import { HttpError, JsonError, liveHttpClient } from "./3-async";
+import { getTodo, showTodo, TodoDeserializationError } from "./4-http";
 
 // get a single todo
 

@@ -1,6 +1,6 @@
+import * as A from "@matechs/core/Array";
 import * as T from "@matechs/core/Effect";
 import * as R from "@matechs/core/Ref";
-import * as A from "@matechs/core/Array";
 
 //
 // Service Definition

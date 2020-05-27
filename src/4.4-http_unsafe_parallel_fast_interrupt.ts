@@ -4,7 +4,7 @@ import { constVoid } from "@matechs/core/Function";
 import { pipe } from "@matechs/core/Pipe";
 import { liveConsole, log } from "./1-environment";
 import { HttpError, JsonError, liveHttpClient } from "./3-async";
-import { getTodo, TodoDeserializationError, showTodos } from "./4-http";
+import { getTodo, showTodos, TodoDeserializationError } from "./4-http";
 
 // demonstrate interruption of all at first error
 

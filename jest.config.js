@@ -7,7 +7,7 @@ module.exports = {
     collectCoverage: false,
     coverageDirectory: "coverage",
     collectCoverageFrom: [
-        "src/**/*.ts"
+        "src/**/(1|2)*.ts"
     ],
     testRegex: 'test'
 };

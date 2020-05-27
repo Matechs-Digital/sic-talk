@@ -457,25 +457,28 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@matechs/core@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@matechs/core/-/core-1.2.0.tgz#7e8e395ae13a04d83cb214896e00207d9dcf55da"
-  integrity sha512-eAtkVTpBhFs5aLb95tCeI48egG+EYjW7iVjeFhNDCb/NXPhpZ3J7wOBx1u5VwyRM0KyHYg0mVcSF6vQ2N3pN4A==
-
-"@matechs/test-jest@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@matechs/test-jest/-/test-jest-3.2.0.tgz#6d3905a06901543eeb88a4469887b57447c40593"
-  integrity sha512-q/t55BmgGxAv/T8A+4nopSGweG4JppkpUDm/o285m/f9qZgyYe3Q5znqmrI/undzr+IZlX/1va4Cj9LTw7ErGw==
+"@matechs/core@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@matechs/core/-/core-1.3.0.tgz#1bffef1d04dedf5c3cb0991bfba29e528c86e6b5"
+  integrity sha512-FEK4u1HkvS/XBeAJ1gNGwAI2YDNDhp4bJE5xr/CF5iSP9rzWP2XfxrgbjwfLQvCUQz3CZBOfDLSXwWoe55aTyg==
   dependencies:
-    "@matechs/core" "^1.2.0"
-    "@matechs/test" "^3.2.0"
+    fp-ts "2.6.2"
+    io-ts "2.2.4"
 
-"@matechs/test@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@matechs/test/-/test-3.2.0.tgz#ac97835984a6793133349371b7760f09a5bae4f8"
-  integrity sha512-OvLMXke/RSSekMSsVJ7W2iVKtgO40Lrzv2qbVsriPtsURsoZ+USuVgfwSLpI/WEEUfZCF89v9i3m+Upq9gjYyg==
+"@matechs/test-jest@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@matechs/test-jest/-/test-jest-3.3.0.tgz#8431563ccd9def6a4e7f4a259b45159345a8f8be"
+  integrity sha512-9XzGtEsd+ltQjzGjuKG3FCqfEIbCM5mAfY57HzUZ42vBeAeRhN+VAeDn0PrFy8HKJnKqAYVLkq0gXrsOlE5SDw==
   dependencies:
-    "@matechs/core" "^1.2.0"
+    "@matechs/core" "^1.3.0"
+    "@matechs/test" "^3.3.0"
+
+"@matechs/test@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@matechs/test/-/test-3.3.0.tgz#1a6ed51226ec69e1d2d69097c8efe22538eed957"
+  integrity sha512-4jpa9peK+EB8iUigcPI4VpW7dPJcwGQtM3JXNUr4JCbjKINjoL5I/iGxOaX2IlkL3jRSE608bNFs7t1coB8N0g==
+  dependencies:
+    "@matechs/core" "^1.3.0"
     fast-check "^1.24.1"
 
 "@sinonjs/commons@^1.7.0":
@@ -1433,6 +1436,11 @@ form-data@~2.3.2:
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
 
+fp-ts@2.6.2:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/fp-ts/-/fp-ts-2.6.2.tgz#0115221e223e0e4a1d08d93c0ebaee9241688cd1"
+  integrity sha512-RUm0iNcD7eMFZo6W1K10kqi0DyYX06lbbjyNgKwEWg1kPZw91ZXlkEx/9cII1x/jY4fHzh14+Hquk5sJnXBzQA==
+
 fragment-cache@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/fragment-cache/-/fragment-cache-0.2.1.tgz#4290fad27f13e89be7f33799c6bc5a0abfff0d19"
@@ -1635,6 +1643,11 @@ inherits@2:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
+
+io-ts@2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/io-ts/-/io-ts-2.2.4.tgz#c9b5390b8c60b9976ad03f670a6b976fe50d4083"
+  integrity sha512-a8A/3jekTgSPfQ+OG40sTiX2gohXZz89X1+TfKsWJ/vpA2dBilBkrGYPiDE8OaKMMG7xm5ma3SAZL5eNr4Bi2w==
 
 ip-regex@^2.1.0:
   version "2.1.0"

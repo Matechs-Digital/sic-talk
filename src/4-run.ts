@@ -1,28 +1,20 @@
 import * as A from "@matechs/core/Array";
 import * as T from "@matechs/core/Effect";
+import * as M from "@matechs/core/Model";
 import { pipe } from "@matechs/core/Pipe";
 import { Show, showString } from "@matechs/core/Show";
 import { getJson } from "./3-async";
 
-export interface Todo {
-  userId: number;
-  id: number;
-  title: string;
-  body: string;
-}
+const Todo_ = M.type({
+  userId: M.number,
+  id: M.number,
+  title: M.string,
+  body: M.string
+});
 
-export const isTodo = (u: any): u is Todo =>
-  typeof u !== "undefined" &&
-  typeof u === "object" &&
-  u !== null &&
-  "userId" in u &&
-  "id" in u &&
-  "title" in u &&
-  "body" in u &&
-  typeof u["userId"] === "number" &&
-  typeof u["id"] === "number" &&
-  typeof u["title"] === "string" &&
-  typeof u["body"] === "string";
+export interface Todo extends M.TypeOf<typeof Todo_> {}
+
+export const Todo = M.opaque<Todo>()(Todo_);
 
 export class TodoDeserializationError extends Error {
   _tag = "TodoDeserializationError" as const;
@@ -35,7 +27,9 @@ export const getTodo = (id: number) =>
   pipe(
     getJson(`https://jsonplaceholder.typicode.com/posts/${id}`),
     T.chain((body) =>
-      isTodo(body) ? T.pure(body) : T.raiseError(new TodoDeserializationError(body))
+      T.chainError_(T.encaseEither(Todo.decode(body)), () =>
+        T.raiseError(new TodoDeserializationError(body))
+      )
     )
   );
 

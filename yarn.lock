@@ -457,28 +457,28 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@matechs/core@^1.4.2":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@matechs/core/-/core-1.4.2.tgz#524741bf3cbcbeb73db42470fa208f492756984f"
-  integrity sha512-f7R5yVSICMsJBMTPtG/KsXsyEbnwPYsnlIWIEhuW8gW2jmbYleLqQHsLdJ1MAR3vF00MsjM3Ut4wjruWnjh6Zg==
+"@matechs/core@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@matechs/core/-/core-1.5.0.tgz#e1ad93f2453d3d20f745153fa55a6e90acf6288b"
+  integrity sha512-yuabPblYfYiMxCF+4Ze3NmEUd4kWKI0XrsfhOofGnL5/hld/HRFW9k3wMd7Lv1whnZ5Ou3mIQw8wDHw0iOGRjQ==
   dependencies:
     fp-ts "2.6.2"
     io-ts "2.2.4"
 
-"@matechs/test-jest@^3.4.2":
-  version "3.4.2"
-  resolved "https://registry.yarnpkg.com/@matechs/test-jest/-/test-jest-3.4.2.tgz#9dbe9e258d9310f9f4d4a8b7a513f040d3356b00"
-  integrity sha512-5zDkz9uORjcNv86r1VFe6eaOdZEBBlSj2sGuj6w5bF+JsXrvCM5oZf4gkLqU8BiCCjOh3d0jMN9Zh0LyMoY4TQ==
+"@matechs/test-jest@^3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@matechs/test-jest/-/test-jest-3.5.0.tgz#cf408b0f7a07f4aa5547c212ff30071471e1afa7"
+  integrity sha512-euhN25FefY+m0G3wLfFMn2S+pUd9O2T0jcHaZITUY+vvGzQOHiFtUOFVNJgPRQbvOwFR7R1qtWh9G0XrC8rQvA==
   dependencies:
-    "@matechs/core" "^1.4.2"
-    "@matechs/test" "^3.4.2"
+    "@matechs/core" "^1.5.0"
+    "@matechs/test" "^3.5.0"
 
-"@matechs/test@^3.4.2":
-  version "3.4.2"
-  resolved "https://registry.yarnpkg.com/@matechs/test/-/test-3.4.2.tgz#93892f400fd94c772af884921382abf13f3eefd0"
-  integrity sha512-ANhV22hC/Hi1pjUhp9x07QkVCO5Uy3I7wcCv3Zz1VVGTfBbMVeUGv/02Rq+ilqHWkR+LvGapx7Y0mCcCmtnJ5A==
+"@matechs/test@^3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@matechs/test/-/test-3.5.0.tgz#e2d041e0580912d01070028e2512118ba7f7a4e2"
+  integrity sha512-VjWDsff0aacJTlFFqeQ0ewFnVwJITegW343PjKiImKQgGvkuPscPn3tWsBXH21v5m/vnHhqhkujHD0z4mgrEug==
   dependencies:
-    "@matechs/core" "^1.4.2"
+    "@matechs/core" "^1.5.0"
     fast-check "^1.24.1"
 
 "@sinonjs/commons@^1.7.0":

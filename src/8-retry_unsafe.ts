@@ -10,11 +10,11 @@ const randomFailing = pipe(
   T.chain((n) => (n > 5 ? T.raiseError("error") : T.pure(n)))
 );
 
-const program = pipe(
-  randomFailing,
-  RT.with(
-    T.pure(RT.monoidRetryPolicy.concat(RT.limitRetries(10), RT.exponentialBackoff(100)))
-  )
+const policy = RT.monoidRetryPolicy.concat(
+  RT.limitRetries(10),
+  RT.exponentialBackoff(100)
 );
+
+const program = pipe(randomFailing, RT.with(policy));
 
 T.run(program, Ex.foldExit(console.error, console.log));

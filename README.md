@@ -30,4 +30,5 @@ node lib/4.4-http_unsafe_parallel_fast_interrupt.js
 node lib/4.5-http_unsafe_par_fast_traverse.js
 node lib/5-managed_unsafe.js
 node lib/6-stream_unsafe.js
+node lib/7.1-provide_managed_unsafe.js
 ```

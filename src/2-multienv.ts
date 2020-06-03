@@ -1,4 +1,5 @@
 import * as T from "@matechs/core/Effect";
+import * as L from "@matechs/core/Layer";
 import { pipe } from "@matechs/core/Pipe";
 import * as C from "./1-environment";
 
@@ -25,7 +26,7 @@ export const add = (y: number) => (x: number) =>
 // Live Provider
 //
 
-export const liveCalculator = T.provide<Calculator>({
+export const liveCalculator = L.fromValue<Calculator>({
   [CalculatorURI]: {
     add: (y) => (x) => T.sync(() => x + y)
   }

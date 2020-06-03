@@ -1,6 +1,7 @@
 import * as T from "@matechs/core/Effect";
 import * as E from "@matechs/core/Either";
 import * as M from "@matechs/core/Monoid";
+import * as L from "@matechs/core/Layer";
 import { pipe } from "@matechs/core/Pipe";
 import * as https from "https";
 
@@ -87,7 +88,7 @@ const get_ = (url: string) =>
     };
   });
 
-export const liveHttpClient = T.provide<HttpClient>({
+export const liveHttpClient = L.fromValue<HttpClient>({
   [HttpClientURI]: {
     get: get_
   }

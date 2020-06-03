@@ -1,5 +1,6 @@
 import * as A from "@matechs/core/Array";
 import * as T from "@matechs/core/Effect";
+import * as L from "@matechs/core/Layer";
 import * as R from "@matechs/core/Ref";
 
 //
@@ -29,7 +30,7 @@ export const error = (message: string, ...rest: any[]) =>
 // Service Live Implementation
 //
 
-export const liveConsole = T.provide<Console>({
+export const liveConsole = L.fromValue<Console>({
   [ConsoleURI]: {
     log: (message, ...rest) => T.sync(() => console.log(message, ...rest)),
     error: (message, ...rest) => T.sync(() => console.error(message, ...rest))
@@ -48,8 +49,8 @@ export interface TestMessage {
 
 export const testMessage = (_: TestMessage) => _;
 
-export const testConsole = (refMessages: R.Ref<Array<TestMessage>>) =>
-  T.provide<Console>({
+export const testConsole = (refMessages: R.Ref<A.Array<TestMessage>>) =>
+  L.fromValue<Console>({
     [ConsoleURI]: {
       log: (message, ...rest) =>
         refMessages.update(A.snoc(testMessage({ message, rest, level: "log" }))),

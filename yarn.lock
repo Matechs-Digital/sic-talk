@@ -465,6 +465,15 @@
     fp-ts "2.6.2"
     io-ts "2.2.4"
 
+"@matechs/core@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@matechs/core/-/core-2.2.2.tgz#f78486df96bccde0a4e6a8a04e58aa1a6eb1025b"
+  integrity sha512-vxRevkI8TxSLQHZEIFD7+aDtA9LVT04O3c/zebYPUi2UL8rPbMktRF/z9aeTF2ZKzERKLjYAiFBwqajliou8+Q==
+  dependencies:
+    fp-ts "2.6.2"
+    fp-ts-contrib "^0.1.15"
+    io-ts "2.2.4"
+
 "@matechs/test-jest@^3.5.0":
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/@matechs/test-jest/-/test-jest-3.5.0.tgz#cf408b0f7a07f4aa5547c212ff30071471e1afa7"
@@ -1435,6 +1444,11 @@ form-data@~2.3.2:
     asynckit "^0.4.0"
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
+
+fp-ts-contrib@^0.1.15:
+  version "0.1.16"
+  resolved "https://registry.yarnpkg.com/fp-ts-contrib/-/fp-ts-contrib-0.1.16.tgz#dc430628aa6694196e54f0f8c531127fb5c61d0b"
+  integrity sha512-DXBROKVMnQoT22AOZnsMlJEz8FjIX0dWWMB3snPif4NB48XEZxc/dxwj17DtSbhORux0+NhSeumPQDS6FkIrzA==
 
 fp-ts@2.6.2:
   version "2.6.2"

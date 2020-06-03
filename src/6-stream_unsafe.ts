@@ -11,6 +11,6 @@ const program = pipe(
   S.collectArray
 );
 
-const main = pipe(program, liveCalculator);
+const main = pipe(program, liveCalculator.use);
 
 T.run(main, foldExit(console.error, console.log));

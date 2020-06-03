@@ -1,8 +1,7 @@
-import * as RT from "@matechs/core/Retry";
-import * as RN from "@matechs/core/Random";
-import * as Ex from "@matechs/core/Exit";
 import * as T from "@matechs/core/Effect";
-import * as M from "@matechs/core/Monoid";
+import * as Ex from "@matechs/core/Exit";
+import * as RN from "@matechs/core/Random";
+import * as RT from "@matechs/core/Retry";
 import { pipe } from "@matechs/core/Pipe";
 
 const randomFailing = pipe(

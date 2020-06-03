@@ -20,6 +20,6 @@
     "typescript": "^3.9.3"
   },
   "dependencies": {
-    "@matechs/core": "^1.5.0"
+    "@matechs/core": "^2.2.2"
   }
 }

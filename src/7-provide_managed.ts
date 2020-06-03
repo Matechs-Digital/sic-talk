@@ -1,6 +1,7 @@
 import * as T from "@matechs/core/Effect";
 import * as M from "@matechs/core/Managed";
 import * as O from "@matechs/core/Option";
+import * as L from "@matechs/core/Layer";
 import { pipe } from "@matechs/core/Pipe";
 import { liveConsole, log } from "./1-environment";
 
@@ -63,7 +64,7 @@ export const managedDb = pipe(
 // use managedDb to provide environment
 
 // T.Provider<unknown, Db, never, never>
-export const liveDb = M.provide(managedDb);
+export const liveDb = L.fromManaged(managedDb);
 
 //
 // Use in a program
@@ -75,4 +76,4 @@ export const program = pipe(
   T.chain((v) => log(`got: ${v}`))
 );
 
-export const liveProgram = pipe(program, liveDb, liveConsole);
+export const liveProgram = pipe(program, liveDb.with(liveConsole).use);

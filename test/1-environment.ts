@@ -7,14 +7,14 @@ import {
   liveConsole
 } from "../src/1-environment";
 import * as T from "@matechs/core/Effect";
+import * as A from "@matechs/core/Array";
 import * as R from "@matechs/core/Ref";
-import { pipe } from "@matechs/core/Pipe";
 
 const useConsole = testM(
   "Should log messages",
   T.Do()
-    .bind("ref", R.makeRef<Array<TestMessage>>([]))
-    .doL(({ ref }) => pipe(program, testConsole(ref)))
+    .bind("ref", R.makeRef<A.Array<TestMessage>>([]))
+    .doL(({ ref }) => testConsole(ref).use(program))
     .bindL("messages", ({ ref }) => ref.get)
     .doL(({ messages }) =>
       T.sync(() => {
@@ -65,4 +65,4 @@ const callSystemConsole = mockedTestM("Call System Console")(() => ({
 
 const consoleProgramSuite = suite("Console Suite")(useConsole, callSystemConsole);
 
-run(consoleProgramSuite)(liveConsole);
+run(consoleProgramSuite)(liveConsole.use);

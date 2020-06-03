@@ -1,8 +1,10 @@
 import * as T from "@matechs/core/Effect";
+import * as A from "@matechs/core/Array";
 import * as M from "@matechs/core/Model";
 import { pipe } from "@matechs/core/Pipe";
 import { Show } from "@matechs/core/Show";
-import { getJson } from "./3-async";
+import { liveConsole } from "./1-environment";
+import { getJson, liveHttpClient } from "./3-async";
 
 const Todo_ = M.type({
   userId: M.number,
@@ -38,6 +40,8 @@ export const showTodo: Show<Todo> = {
   show: (todo) => JSON.stringify(todo, null, 2)
 };
 
-export const showTodos: Show<Todo[]> = {
+export const showTodos: Show<A.Array<Todo>> = {
   show: (todos) => JSON.stringify(todos, null, 2)
 };
+
+export const appLayer = liveHttpClient.with(liveConsole);

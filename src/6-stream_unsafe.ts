@@ -1,7 +1,7 @@
 import * as A from "@matechs/core/Array";
 import * as T from "@matechs/core/Effect";
 import { foldExit } from "@matechs/core/Exit";
-import { pipe } from "@matechs/core/Pipe";
+import { pipe } from "@matechs/core/Function";
 import * as S from "@matechs/core/Stream";
 import { add, liveCalculator } from "./2-multienv";
 

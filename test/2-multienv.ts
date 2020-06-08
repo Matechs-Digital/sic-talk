@@ -1,7 +1,6 @@
 import * as A from "@matechs/core/Array";
 import * as T from "@matechs/core/Effect";
 import * as L from "@matechs/core/Layer";
-import { pipe } from "@matechs/core/Pipe";
 import * as R from "@matechs/core/Ref";
 import { expect, run, suite, testM } from "@matechs/test-jest";
 import { testConsole, TestMessage, testMessage } from "../src/1-environment";

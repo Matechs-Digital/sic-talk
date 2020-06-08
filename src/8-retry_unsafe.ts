@@ -2,7 +2,7 @@ import * as T from "@matechs/core/Effect";
 import * as Ex from "@matechs/core/Exit";
 import * as RN from "@matechs/core/Random";
 import * as RT from "@matechs/core/Retry";
-import { pipe } from "@matechs/core/Pipe";
+import { pipe } from "@matechs/core/Function";
 
 const randomFailing = pipe(
   RN.randomRange(0, 10),

@@ -457,37 +457,43 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@matechs/core@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@matechs/core/-/core-1.5.0.tgz#e1ad93f2453d3d20f745153fa55a6e90acf6288b"
-  integrity sha512-yuabPblYfYiMxCF+4Ze3NmEUd4kWKI0XrsfhOofGnL5/hld/HRFW9k3wMd7Lv1whnZ5Ou3mIQw8wDHw0iOGRjQ==
-  dependencies:
-    fp-ts "2.6.2"
-    io-ts "2.2.4"
-
-"@matechs/core@^2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@matechs/core/-/core-2.2.2.tgz#f78486df96bccde0a4e6a8a04e58aa1a6eb1025b"
-  integrity sha512-vxRevkI8TxSLQHZEIFD7+aDtA9LVT04O3c/zebYPUi2UL8rPbMktRF/z9aeTF2ZKzERKLjYAiFBwqajliou8+Q==
+"@matechs/core@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@matechs/core/-/core-2.4.0.tgz#5993f7d7811f57bc8700954ef4c6079d93329369"
+  integrity sha512-hmJEZZ51AxXz7CL5EeUJVqfxGvw5SzsX1k0/R2t/sZvI8CYyjZlhk663KOXafPv/ro6NHPTK/GQOB6EGJgckrg==
   dependencies:
     fp-ts "2.6.2"
     fp-ts-contrib "^0.1.15"
-    io-ts "2.2.4"
 
-"@matechs/test-jest@^3.5.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@matechs/test-jest/-/test-jest-3.5.0.tgz#cf408b0f7a07f4aa5547c212ff30071471e1afa7"
-  integrity sha512-euhN25FefY+m0G3wLfFMn2S+pUd9O2T0jcHaZITUY+vvGzQOHiFtUOFVNJgPRQbvOwFR7R1qtWh9G0XrC8rQvA==
+"@matechs/morphic-alg@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@matechs/morphic-alg/-/morphic-alg-0.4.0.tgz#c398bdc26ee94e66ffc5283c7f9aa8dd36cecc12"
+  integrity sha512-3NzqOD4orFmJDG1AEU4lfZS9bdNbAh46q+g7qsWQuoL9sJ4juVQrjqGER8HngpXrFjSG21zTpPBsq+hr7gR74A==
   dependencies:
-    "@matechs/core" "^1.5.0"
-    "@matechs/test" "^3.5.0"
+    "@matechs/core" "^2.4.0"
 
-"@matechs/test@^3.5.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@matechs/test/-/test-3.5.0.tgz#e2d041e0580912d01070028e2512118ba7f7a4e2"
-  integrity sha512-VjWDsff0aacJTlFFqeQ0ewFnVwJITegW343PjKiImKQgGvkuPscPn3tWsBXH21v5m/vnHhqhkujHD0z4mgrEug==
+"@matechs/morphic@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@matechs/morphic/-/morphic-0.4.0.tgz#64b827a52a562e46903c597b5ee2572443769d75"
+  integrity sha512-NJWDzG/Kfvh0rEnXZBzPJBb23IQxPjiHWsw47JEQrO4CN0ZhgJ9aw6cb6BdQ/pImx2r1E/S2pTvzWU55n6E6Jg==
   dependencies:
-    "@matechs/core" "^1.5.0"
+    "@matechs/core" "^2.4.0"
+    "@matechs/morphic-alg" "^0.4.0"
+
+"@matechs/test-jest@^4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@matechs/test-jest/-/test-jest-4.4.0.tgz#3e569f87b54209e7734a1d19dba0deac6e1bd9f5"
+  integrity sha512-NQcRSQj0sFy0re/WG72AunQyExVPOugcry46rgl3A9JE4xoolzSkfsg2rfplr1tVs0pMJ63/P9yJaxVj1h10wg==
+  dependencies:
+    "@matechs/core" "^2.4.0"
+    "@matechs/test" "^4.4.0"
+
+"@matechs/test@^4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@matechs/test/-/test-4.4.0.tgz#26158eb67f9debc940499c7e5b59ce38a4fa4b29"
+  integrity sha512-TjDwdYHiRbKVPTZ6Twr5/66EK0m0ik+0vKUywZb4SGsgJLdO+OvgFRYdhOL5+lrabNsuA9sfAok+2ABBQmwfaw==
+  dependencies:
+    "@matechs/core" "^2.4.0"
     fast-check "^1.24.1"
 
 "@sinonjs/commons@^1.7.0":
@@ -1371,7 +1377,7 @@ extsprintf@^1.2.0:
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
   integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
 
-fast-check@^1.24.1:
+fast-check@^1.24.1, fast-check@^1.24.2:
   version "1.24.2"
   resolved "https://registry.yarnpkg.com/fast-check/-/fast-check-1.24.2.tgz#1f5e4a3c20530c3a85a861e60f680c32229d4fcb"
   integrity sha512-ZL48cyZZLJnVsUj127Zi1mfFLM98yzw0LlSSH8CMeVmpL5RCfSRcZSZZ0kJWrRK4eOgNFnXXKNDbzuRb3Vsdhg==
@@ -1383,6 +1389,11 @@ fast-deep-equal@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.1.tgz#545145077c501491e33b15ec408c294376e94ae4"
   integrity sha512-8UEa58QDLauDNfpbrX55Q9jrGHThw2ZMdOky5Gl1CDtVeJDPVrG4Jxx1N8jw2gkWaff5UUuX1KJd+9zGe2B+ZA==
+
+fast-equals@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/fast-equals/-/fast-equals-2.0.0.tgz#bef2c423af3939f2c54310df54c57e64cd2adefc"
+  integrity sha512-u6RBd8cSiLLxAiC04wVsLV6GBFDOXcTCgWkd3wEoFXgidPSoAJENqC9m7Jb2vewSvjBIfXV6icKeh3GTKfIaXA==
 
 fast-json-stable-stringify@2.x, fast-json-stable-stringify@^2.0.0:
   version "2.1.0"
@@ -1657,11 +1668,6 @@ inherits@2:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
-
-io-ts@2.2.4:
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/io-ts/-/io-ts-2.2.4.tgz#c9b5390b8c60b9976ad03f670a6b976fe50d4083"
-  integrity sha512-a8A/3jekTgSPfQ+OG40sTiX2gohXZz89X1+TfKsWJ/vpA2dBilBkrGYPiDE8OaKMMG7xm5ma3SAZL5eNr4Bi2w==
 
 ip-regex@^2.1.0:
   version "2.1.0"
@@ -3395,10 +3401,10 @@ tr46@^2.0.2:
   dependencies:
     punycode "^2.1.1"
 
-ts-jest@^26.0.0:
-  version "26.0.0"
-  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.0.0.tgz#957b802978249aaf74180b9dcb17b4fd787ad6f3"
-  integrity sha512-eBpWH65mGgzobuw7UZy+uPP9lwu+tPp60o324ASRX4Ijg8UC5dl2zcge4kkmqr2Zeuk9FwIjvCTOPuNMEyGWWw==
+ts-jest@^26.1.0:
+  version "26.1.0"
+  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.1.0.tgz#e9070fc97b3ea5557a48b67c631c74eb35e15417"
+  integrity sha512-JbhQdyDMYN5nfKXaAwCIyaWLGwevcT2/dbqRPsQeh6NZPUuXjZQZEfeLb75tz0ubCIgEELNm6xAzTe5NXs5Y4Q==
   dependencies:
     bs-logger "0.x"
     buffer-from "1.x"
@@ -3462,10 +3468,10 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@^3.9.3:
-  version "3.9.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.3.tgz#d3ac8883a97c26139e42df5e93eeece33d610b8a"
-  integrity sha512-D/wqnB2xzNFIcoBG9FG8cXRDjiqSTbG2wd8DMZeQyJlP1vfTkIxH4GKveWaEBYySKIg+USu+E+EDIR47SqnaMQ==
+typescript@^3.9.5:
+  version "3.9.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.5.tgz#586f0dba300cde8be52dd1ac4f7e1009c1b13f36"
+  integrity sha512-hSAifV3k+i6lEoCJ2k6R2Z/rp/H3+8sdmcn5NrS3/3kE7+RyZXm9aqvxWqjEXHAd8b0pShatpcdMTvEdvAJltQ==
 
 union-value@^1.0.0:
   version "1.0.1"

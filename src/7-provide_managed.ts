@@ -2,7 +2,7 @@ import * as T from "@matechs/core/Effect";
 import * as M from "@matechs/core/Managed";
 import * as O from "@matechs/core/Option";
 import * as L from "@matechs/core/Layer";
-import { pipe } from "@matechs/core/Pipe";
+import { pipe } from "@matechs/core/Function";
 import { liveConsole, log } from "./1-environment";
 
 //

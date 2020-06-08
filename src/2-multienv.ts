@@ -1,6 +1,6 @@
 import * as T from "@matechs/core/Effect";
 import * as L from "@matechs/core/Layer";
-import { pipe } from "@matechs/core/Pipe";
+import { pipe } from "@matechs/core/Function";
 import * as C from "./1-environment";
 
 //

@@ -1,8 +1,7 @@
 import * as T from "@matechs/core/Effect";
 import { foldExit } from "@matechs/core/Exit";
-import { constVoid } from "@matechs/core/Function";
+import { constVoid, pipe } from "@matechs/core/Function";
 import * as M from "@matechs/core/Managed";
-import { pipe } from "@matechs/core/Pipe";
 import * as fs from "fs";
 import * as path from "path";
 

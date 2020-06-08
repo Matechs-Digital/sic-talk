@@ -1,6 +1,5 @@
 import * as T from "@matechs/core/Effect";
-import { flow } from "@matechs/core/Function";
-import { pipe } from "@matechs/core/Pipe";
+import { flow, pipe } from "@matechs/core/Function";
 
 // Pre-Intro - Function composition using pipe & flow
 

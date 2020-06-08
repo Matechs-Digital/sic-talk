@@ -2,7 +2,7 @@ import * as T from "@matechs/core/Effect";
 import * as E from "@matechs/core/Either";
 import * as M from "@matechs/core/Monoid";
 import * as L from "@matechs/core/Layer";
-import { pipe } from "@matechs/core/Pipe";
+import { pipe } from "@matechs/core/Function";
 import * as https from "https";
 
 //

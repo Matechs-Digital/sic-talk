@@ -472,13 +472,14 @@
   dependencies:
     "@matechs/core" "^2.4.2"
 
-"@matechs/morphic@^0.4.2":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@matechs/morphic/-/morphic-0.4.2.tgz#59fc7c818d1e83da60a2cdc2f744f35b8e71c3a2"
-  integrity sha512-+erLS8ca/PQF/Blg/vlCnytdDS/2HELSQyYp7iAWwts48gygMyv0LN4ItnpZfM3Ksm4B3nwaUWvcB37V3dhlRg==
+"@matechs/morphic@^0.4.3":
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/@matechs/morphic/-/morphic-0.4.3.tgz#0197e5ef4cae754d2955ae1ab000bdaa637ca2e5"
+  integrity sha512-9sAkWfDIyVC3vSYyrzBpsM4BhVXk1JJ+n4jHKOI4sxfPGqpMNXZyeh8gocXfADpC5kGR+45hGxw0i3mk0Z62dA==
   dependencies:
     "@matechs/core" "^2.4.2"
     "@matechs/morphic-alg" "^0.4.2"
+    fast-equals "^2.0.0"
 
 "@matechs/test-jest@^4.4.2":
   version "4.4.2"
